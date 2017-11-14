@@ -1,5 +1,9 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import { Grid } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
+import createReactClass from 'create-react-class';
 
 function getPosts () {
   return [
@@ -33,7 +37,23 @@ const PostLink = ({ post }) => (
   </li>
 )
 
+const gridinstance = () => (
+  <Grid>
+    <Row className="show-grid">
+        <Col xs={12} md={8}>ode</Col>
+      <Col xs={6} md={4}>de</Col>
+    </Row>
+
+    <Row className="show-grid">
+      <Col xs={6} md={4}>asd</Col>
+      <Col xs={6} md={4}>asd</Col>
+      <Col xsHidden md={4}>asd</Col>
+    </Row>
+  </Grid>
+);
+
 export default () => (
+<div>
   <Layout>
     <h1>My Blog</h1>
     <ul>
@@ -65,4 +85,6 @@ export default () => (
       }
     `}</style>
   </Layout>
+  <gridinstance />
+</div>       
 )

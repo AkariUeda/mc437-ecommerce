@@ -5,43 +5,154 @@ import { Clearfix } from 'react-bootstrap';
 import createReactClass from 'create-react-class';
 
 
-const MyGrid = createReactClass({
+const GridProduto = createReactClass({
 
     getProdutos() {
         return [
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
             'Donec hendrerit tempor tellus.',
-            'Donec pretium posuere tellus.',
-            'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.',
+            'Donec pretium posuere tellus.'
         ];
     },
 
     render() {
         var produtos = this.getProdutos();
+        var colunasM = 4;
+        var colunasS = 3;
 
         return (
-          <Grid>
+          <div>
+          <Grid bsClass='GridProduto' >
             <Row className="show-grid">
-              <Col sm={6} md={3}>
+              <Col sm={colunasS} md={colunasM}>
                 <h2>Produto 1</h2>
                 {produtos[0]}
               </Col>
-              <Col sm={6} md={3}>
+              <Col sm={colunasS} md={colunasM}>
                 <h2>Produto 2</h2>
                 {produtos[1]}
               </Col>
-              <Col sm={6} md={3}>
+              <Col sm={colunasS} md={colunasM}>
                 <h2>Produto 3</h2>
                 {produtos[2]}
               </Col>
-              <Col sm={6} md={3}>
-                <h2>Produto 4</h2>
-                {produtos[3]}
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
+              </Col>
+            </Row>
+            <Row className="show-grid">
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 1</h2>
+                {produtos[0]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 2</h2>
+                {produtos[1]}
+              </Col>
+              <Col sm={colunasS} md={colunasM}>
+                <h2>Produto 3</h2>
+                {produtos[2]}
               </Col>
             </Row>
           </Grid>
+          </div>
         );
     }
 });
 
-export default MyGrid;
+export default GridProduto;

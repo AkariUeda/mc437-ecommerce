@@ -1,5 +1,6 @@
 import Layout from '../components/MyLayout.js'
-import MyGrid from '../components/MyGrid.js'
+import GridProduto from '../components/MyGrid.js'
+import GridLayout from '../components/MyGrid.js'
 import Link from 'next/link'
 
 
@@ -67,7 +68,7 @@ export default () => (
         opacity: 0.6;
       }
     `}</style>
-    <MyGrid />
+    <GridLayout />
   </Layout>
 </div>       
 )

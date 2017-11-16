@@ -61,8 +61,7 @@ const FormExample = createReactClass({
 });
 
 const Header = () => (
-  <Theme>
-  <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
+  <div>
     <Navbar fluid>
       <Navbar.Header>
         <Navbar.Brand>
@@ -75,8 +74,7 @@ const Header = () => (
       </Nav>
     </Navbar>
     <FormExample />
-    <p />
-  </Theme>
+  </div>
 )
 
 export default Header

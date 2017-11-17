@@ -2,12 +2,12 @@ import Link from 'next/link'
 import Theme from '../components/Theme';
 import createReactClass from 'create-react-class';
 import indexStyle from '../styles/index.scss';
-import { Button } from 'react-bootstrap' 
-import { ControlLabel } from 'react-bootstrap' 
-import { FormControl } from 'react-bootstrap' 
-import { FormGroup } from 'react-bootstrap' 
-import { HelpBlock } from 'react-bootstrap' 
-import { MenuItem } from 'react-bootstrap' 
+import { Button } from 'react-bootstrap'
+import { ControlLabel } from 'react-bootstrap'
+import { FormControl } from 'react-bootstrap'
+import { FormGroup } from 'react-bootstrap'
+import { HelpBlock } from 'react-bootstrap'
+import { MenuItem } from 'react-bootstrap'
 import { Nav } from 'react-bootstrap'
 import { NavDropdown } from 'react-bootstrap'
 import { NavItem } from 'react-bootstrap'
@@ -65,7 +65,7 @@ const Header = () => (
     <Navbar fluid>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="/">E-Commerce dos Migué</a>
+          <a href="/">E-Commerce</a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>

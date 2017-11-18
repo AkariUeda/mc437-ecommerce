@@ -14,7 +14,6 @@ import { NavItem } from 'react-bootstrap'
 import { Navbar } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 
-
 const linkStyle = {
   marginRight: 15
 }
@@ -40,7 +39,7 @@ const FormExample = createReactClass({
 
   render() {
     return (
-      <Form inline>
+      <Navbar.Form>
         <FormGroup
           controlId="formBasicText"
           validationState={this.getValidationState()}
@@ -55,26 +54,66 @@ const FormExample = createReactClass({
           <Button type="submit">Procurar</Button>
           <FormControl.Feedback />
         </FormGroup>
-      </Form>
+      </Navbar.Form>
     );
   },
 });
 
-const Header = () => (
-  <div>
-    <Navbar fluid>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <a href="/">E-Commerce</a>
-        </Navbar.Brand>
-      </Navbar.Header>
-      <Nav>
-        <NavItem eventKey={1} href="/">Home</NavItem>
-        <NavItem eventKey={2} href="/about">About</NavItem>
-      </Nav>
-    </Navbar>
-    <FormExample />
-  </div>
-)
+const Header = createReactClass({
+    render() {
+        var NavUsuario
+        var NavLogin
+
+        // var logged = this.props.store.user || false;
+        var logged = false;
+
+        if(this.logged){
+            NavUsuario = (
+              <Navbar.Text>
+                Signed in as: <Navbar.Link href="#">Mark Otto</Navbar.Link>
+              </Navbar.Text>
+            )
+            NavLogin = (
+              <NavItem eventKey={2} href="#">
+                Logout
+              </NavItem>
+            )
+        }else{
+            NavUsuario = (
+              <Navbar.Text pullRight>
+                Signed in as: Visitante
+              </Navbar.Text>
+            )
+            NavLogin = (
+              <Nav pullRight>
+                <NavItem eventKey={2} href="#">
+                  Login
+                </NavItem>
+              </Nav>
+            )
+        }
+        
+        return (
+          <div class="header">
+            <Navbar fluid>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  <a href="/">E-Commerce</a>
+                </Navbar.Brand>
+              </Navbar.Header>
+              <Nav>
+                <NavItem eventKey={1} href="/">Home</NavItem>
+                <NavItem eventKey={2} href="/about">About</NavItem>
+              </Nav>
+              {NavUsuario}
+              {NavLogin}
+              <Nav pullRight>
+                <NavItem eventKey={3} href="#">Carrinho</NavItem>
+              </Nav>
+              <FormExample />
+            </Navbar>
+          </div>
+    )}
+})
 
 export default Header

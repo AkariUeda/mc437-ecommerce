@@ -39,12 +39,8 @@ const PostLink = ({ post }) => (
 export default () => (
 <div>
   <Layout>
-    <h1>My Blog</h1>
-    <ul>
-      {getPosts().map((post) => (
-        <PostLink key={post.id} post={post}/>
-      ))}
-    </ul>
+
+  <h1>Produtos em destaque:</h1>
     <style jsx>{`
       h1, a {
         font-family: "Arial";
@@ -70,5 +66,5 @@ export default () => (
     `}</style>
     <GridLayout />
   </Layout>
-</div>       
+</div>
 )

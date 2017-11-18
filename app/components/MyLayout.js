@@ -20,14 +20,13 @@ const Layout = (props) => (
       <Grid bsClass='GridLayout'>
         <Row className="show-grid">
           <Col sm={6} md={2}>
-            <h2>Menu BLABLABLA</h2>
+            <h2>Categorias</h2>
 
              <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Brincadeiras</li>
+        <li>Lingeries</li>
+        <li>Acessórios</li>
+        <li>Cosméticos</li>
              </ul>
 
           </Col>

@@ -26,8 +26,8 @@ const GridProduto = createReactClass({
           <Grid bsClass='GridProduto' >
             <Row className="show-grid">
               <Col sm={colunasS} md={colunasM}>
-                  <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                    <h3>Disket</h3>
+                  <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                    <h3>dados</h3>
                     <p>{produtos[0]}</p>
                     <p>
                       <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -37,8 +37,8 @@ const GridProduto = createReactClass({
               </Col>
 
               <Col sm={colunasS} md={colunasM}>
-                  <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                    <h3>Disket</h3>
+                  <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                    <h3>dados</h3>
                     <p>{produtos[0]}</p>
                     <p>
                       <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -48,8 +48,8 @@ const GridProduto = createReactClass({
               </Col>
 
               <Col sm={colunasS} md={colunasM}>
-                  <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                    <h3>Disket</h3>
+                  <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                    <h3>dados</h3>
                     <p>{produtos[0]}</p>
                     <p>
                       <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -62,8 +62,8 @@ const GridProduto = createReactClass({
             <Row className="show-grid">
 
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -72,8 +72,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -82,8 +82,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -95,8 +95,8 @@ const GridProduto = createReactClass({
 
             <Row className="show-grid">
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -105,8 +105,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -115,8 +115,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -127,8 +127,8 @@ const GridProduto = createReactClass({
             </Row>
             <Row className="show-grid">
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -137,8 +137,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;
@@ -147,8 +147,8 @@ const GridProduto = createReactClass({
                 </Thumbnail>
             </Col>
             <Col sm={colunasS} md={colunasM}>
-                <Thumbnail src="/assets/disket.jpg" alt="242x200">
-                  <h3>Disket</h3>
+                <Thumbnail src="/assets/dados.jpg" alt="242x200">
+                  <h3>dados</h3>
                   <p>{produtos[0]}</p>
                   <p>
                     <Button bsStyle="primary">Adicionar ao carrinho</Button>&nbsp;

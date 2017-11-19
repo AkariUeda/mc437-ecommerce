@@ -2,9 +2,9 @@ import Layout from '../components/MyLayout.js'
 
 export default () => (
     <Layout>
-       <p>
-
-       Site de e-commerce criado para a disciplina de MC437 no 2s/2017
+       <h3>
+        Site de e-commerce criado para a disciplina de MC437 no 2s/2017
+       </h3>
 
        <ul>
           <li>Lucas Brito</li>
@@ -13,6 +13,5 @@ export default () => (
           <li>Pedro Chinen</li>
           <li>Miguel Guida</li>
       </ul>
-       </p>
     </Layout>
 )

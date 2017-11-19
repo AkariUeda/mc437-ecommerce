@@ -5,12 +5,36 @@ import indexStyle from '../styles/index.scss';
 import { Col } from 'react-bootstrap';
 import { Grid } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
+import { ListGroup } from 'react-bootstrap';
+import { ListGroupItem } from 'react-bootstrap';
 
 const layoutStyle = {
   margin: 5,
   padding: 10,
   border: '0.2px solid #DDD'
 }
+
+const Categorias = createReactClass({
+    render (){
+        return (
+            <ListGroup>
+              <ListGroupItem href="#">
+                Brincadeiras
+              </ListGroupItem>
+              <ListGroupItem href="#">
+                Lingeries
+              </ListGroupItem>
+              <ListGroupItem href="#">
+                Acessórios
+              </ListGroupItem>
+              <ListGroupItem href="#">
+                Cosméticos
+              </ListGroupItem>
+            </ListGroup>
+        )
+    }
+
+})
 
 const Layout = (props) => (
   <Theme>
@@ -21,14 +45,7 @@ const Layout = (props) => (
         <Row className="show-grid">
           <Col sm={6} md={2}>
             <h2>Categorias</h2>
-
-             <ul>
-        <li>Brincadeiras</li>
-        <li>Lingeries</li>
-        <li>Acessórios</li>
-        <li>Cosméticos</li>
-             </ul>
-
+            <Categorias />
           </Col>
           <Col sm={10}>
             {props.children}

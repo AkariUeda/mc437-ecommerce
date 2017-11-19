@@ -18,7 +18,7 @@ const linkStyle = {
   marginRight: 15
 }
 
-const FormExample = createReactClass({
+const FormProcurar = createReactClass({
   getInitialState() {
     return {
       value: '',
@@ -51,32 +51,40 @@ const FormExample = createReactClass({
             onChange={this.handleChange}
           />
           {' '}
-          <Button type="submit">Procurar</Button>
-          <FormControl.Feedback />
+        <Button type="submit">Procurar</Button>
         </FormGroup>
+
+
       </Navbar.Form>
     );
   },
 });
 
 const Header = createReactClass({
+
+    getInitialState() {
+        return {
+            // logged: this.props.store.user || false;
+            logged: true,
+        };
+    },
+
     render() {
         var NavUsuario
         var NavLogin
 
-        // var logged = this.props.store.user || false;
-        var logged = false;
-
-        if(this.logged){
+        if(this.state.logged === true){
             NavUsuario = (
-              <Navbar.Text>
+              <Navbar.Text pullRight>
                 Signed in as: <Navbar.Link href="#">Mark Otto</Navbar.Link>
               </Navbar.Text>
             )
             NavLogin = (
-              <NavItem eventKey={2} href="#">
-                Logout
-              </NavItem>
+              <Nav pullRight>
+                <NavItem eventKey={2} href="#">
+                  Logout
+                </NavItem>
+              </Nav>
             )
         }else{
             NavUsuario = (
@@ -86,12 +94,16 @@ const Header = createReactClass({
             )
             NavLogin = (
               <Nav pullRight>
-                <NavItem eventKey={2} href="#">
+                <NavItem eventKey={2} href="/login">
                   Login
                 </NavItem>
               </Nav>
             )
         }
+
+        console.log(this.state.logged);
+        console.log(NavUsuario);
+        console.log(NavLogin);
         
         return (
           <div class="header">
@@ -103,14 +115,16 @@ const Header = createReactClass({
               </Navbar.Header>
               <Nav>
                 <NavItem eventKey={1} href="/">Home</NavItem>
+              </Nav>
+              <Nav>
                 <NavItem eventKey={2} href="/about">About</NavItem>
               </Nav>
-              {NavUsuario}
               {NavLogin}
+              {NavUsuario}
               <Nav pullRight>
                 <NavItem eventKey={3} href="#">Carrinho</NavItem>
               </Nav>
-              <FormExample />
+              <FormProcurar />
             </Navbar>
           </div>
     )}

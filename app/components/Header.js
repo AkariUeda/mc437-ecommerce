@@ -100,10 +100,6 @@ const Header = createReactClass({
               </Nav>
             )
         }
-
-        console.log(this.state.logged);
-        console.log(NavUsuario);
-        console.log(NavLogin);
         
         return (
           <div class="header">
@@ -122,7 +118,7 @@ const Header = createReactClass({
               {NavLogin}
               {NavUsuario}
               <Nav pullRight>
-                <NavItem eventKey={3} href="#">Carrinho</NavItem>
+                <NavItem eventKey={3} href="/carrinho">Carrinho</NavItem>
               </Nav>
               <FormProcurar />
             </Navbar>

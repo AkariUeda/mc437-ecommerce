@@ -5,6 +5,7 @@ import { inject, observer } from 'mobx-react';
 import Layout from '../../components/Layout';
 import ProdutosCarrinho from '../../components/ProdutosCarrinho';
 import InformacoesCliente from '../../components/InformacoesCliente';
+import Pagamento from '../../components/Pagamento';
 
 export default class CarrinhoIndex extends React.Component {
 
@@ -82,14 +83,8 @@ export default class CarrinhoIndex extends React.Component {
                   </ListGroupItem>
                 </ListGroup>
               </Col>
-
-              <FormGroup>
-                <Col smOffset={2} sm={10}>
-                  <Button type="submit" bsSize="large">
-                  Finalizar Compra
-                </Button>
-                </Col>
-              </FormGroup>
+            
+              <Pagamento />
             </Form>
           </Panel>
         </Layout>

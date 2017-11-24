@@ -19,10 +19,22 @@ const linkStyle = {
 }
 
 export default class Header extends React.Component {
+    constructor(props) {
+      super(props);
 
-  state = {
-    logged: true
-  }
+      const isLogged = localStorage.getItem("logged");
+      if (isLogged){
+        
+
+      }else{
+        this.state = {logged: false};
+      }
+
+      // this.state = {
+      //   logged:  localStorage.getItem("logged"),
+      //   user_id: localStorage.getItem("user_id"),
+      //   token:   }
+    }
 
     render() {
           var NavUsuario
@@ -77,7 +89,7 @@ export default class Header extends React.Component {
                 {NavLogin}
                 {NavUsuario}
                 <Nav pullRight>
-                  <NavItem eventKey={3} href="#">Carrinho</NavItem>
+                  <NavItem eventKey={3} href="/carrinho">Carrinho</NavItem>
                 </Nav>
                 <FormProcurar />
               </Navbar>

@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
-
+import Carrossel from '../components/Carrossel.js';
 import Layout from '../components/MyLayout.js'
 import GridLayout from '../components/MyGrid.js'
 
@@ -10,6 +10,7 @@ import api from '../utils/api';
 const Index = (props) => (
   <div>
     <Layout>
+      <Carrossel />
       <h1>Produtos em destaque:</h1>
       <style jsx>{`
         h1, a {

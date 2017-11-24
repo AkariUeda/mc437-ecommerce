@@ -1,7 +1,7 @@
 import Header from './Header'
 import Bootstrap from './Bootstrap';
 import Menu from './Menu';
-import Carrossel from './Carrossel';
+
 
 const layoutStyle = {
   margin: 20,
@@ -17,7 +17,7 @@ const Layout = (props) => (
     <Header />
 
     <Menu />
-    <Carrossel />
+
     {props.children}
 
 
